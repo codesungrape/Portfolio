@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+    <header>
+        <nav id="nav-container">
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Testing</a></li>
+                <li><a href="">Contact</a></li>
+                <div class="social-links">
+                    <a href="www.linkedin.com/in/shanti-rai-044902199" target="blank">Linkedin</a>
+                    <a href="#">GitHub</a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <br><br><br>
+        <section id="contact-us">
+            <h1>Let's Talk</h1>
+            <p>Interested in our services or have a specific project in mind? Use the form below to share the details with us. Whether it's a web development project or a technical inquiry, we're here to assist and collaborate with you.</p>
+        </section>
+
+        <form action="/submit-form" method="post">
+            <input type="text" id="fullname" name="fullname" placeholder="Name *" required><br><br>
+            
+            <input type="email" id="email" name="email" placeholder="Email *" required><br><br>
+
+            <input type="subject" id="subject" name="subject" placeholder="Subject *" required><br><br>
+            
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Write your message here..."></textarea>
+
+        </form>
+    </main>
+
+
+    <footer></footer>
+    
+</body>
+</html>
