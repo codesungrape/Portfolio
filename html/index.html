@@ -9,43 +9,47 @@
 </head>
 <body>
     <header>
-        <nav id="nav-container">
+        <nav id="nav-container" role="navigation" aria-label="Main Navigation">
             <ul>
                 <li><a href="">About</a></li>
                 <li><a href="">Projects</a></li>
                 <li><a href="">Testing</a></li>
                 <li><a href="../html/contact.html">Contact</a></li>
                 <div class="social-links">
-                    <a href="www.linkedin.com/in/shanti-rai-044902199" target="blank">Linkedin</a>
-                    <a href="#">GitHub</a>
+                    <a href="www.linkedin.com/in/shanti-rai-044902199" target="_blank" aria-label="Linkedin profile">Linkedin</a>
+                    <a href="#" target="_blank"  aria-label="GitHub profile">GitHub</a>
                 </div>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="introduction">
-            <h5>Hi, my name is</h5>
+        <br><br>
+        <section id="introduction" role="region" aria-label="introduction-title">
+            <h5 id="introduction-title">Hi, my name is</h5>
             <h1>Shanti Rai</h1>
             <h1>I build and test things for the web.</h1>
             <h5>Front-end developer / Quality Assurance</h5>
         </section>
-
+    
+        <br>
+        <br>
         <hr>
-
+        <br>
         <section id="projects-container">
-            <h1>Projects</h1>
-            <section id="WellFed">
-                <h2><a href="./wellFed.html">Wellfed</a></h2>
+            <h1><a href="">Projects</a></h1>
+
+            <section id="WellFed" role="region" aria-labelledby="wellFed-title">
+                <h2 id="wellFed-title"><a href="./wellFed.html">Wellfed</a></h2>
                 <img src="../images/WellFed.png" alt="Screenshot of WellFed Homepage">
             </section>
             <div>
                 <br>
                 <br>
             </div>
-            <section id="WellFed">
-                <h2><a href="./portfolio.html">Personal Portfolio</a></h2>
-                <img src="../images/PortfolioScreenshot.png" alt="Screenshot of Personal POrtfolio Homepage">
+            <section id="Portfolio" role="region" aria-labelledby="portfolio">
+                <h2 id="portfolio-title"><a href="./portfolio.html">Personal Portfolio</a></h2>
+                <img src="../images/PortfolioScreenshot.png" alt="Screenshot of Personal Portfolio Homepage">
             </section>
         </section>
 

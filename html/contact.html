@@ -8,15 +8,15 @@
 </head>
 <body>
     <header>
-        <nav id="nav-container">
+        <nav id="nav-container" role="navigation" aria-label="Main Navigation">
             <ul>
                 <li><a href="">About</a></li>
                 <li><a href="">Projects</a></li>
                 <li><a href="">Testing</a></li>
                 <li><a href="">Contact</a></li>
                 <div class="social-links">
-                    <a href="www.linkedin.com/in/shanti-rai-044902199" target="blank">Linkedin</a>
-                    <a href="#">GitHub</a>
+                    <a href="www.linkedin.com/in/shanti-rai-044902199" target="blank" aria-label="LinkedIn profile profile">Linkedin</a>
+                    <a href="#" target="_blank" aria-label="GitHub profile">GitHub</a>
                 </div>
             </ul>
         </nav>
@@ -24,13 +24,15 @@
 
 
     <main>
-        <br><br><br>
-        <section id="contact-us">
-            <h1>Let's Talk</h1>
+        <br>
+        <br>
+        <br>
+        <section id="contact-us" role="region" aria-labelledby="contact-us-title">
+            <h1 id="contact-us-title">Let's Talk</h1>
             <p>Interested in our services or have a specific project in mind? Use the form below to share the details with us. Whether it's a web development project or a technical inquiry, we're here to assist and collaborate with you.</p>
         </section>
 
-        <form action="/submit-form" method="post">
+        <form action="/submit-form" method="post" aria-labelledby="contact-us-title">
             <input type="text" id="fullname" name="fullname" placeholder="Name *" required><br><br>
             
             <input type="email" id="email" name="email" placeholder="Email *" required><br><br>

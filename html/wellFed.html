@@ -9,27 +9,28 @@
 
 <body>
     <header>
-        <nav id="nav-container">
+        <nav id="nav-container" role="navigation" aria-label="Main Navigation">
             <ul>
                 <li><a href="">About</a></li>
                 <li><a href="">Projects</a></li>
                 <li><a href="">Testing</a></li>
                 <li><a href="">Contact</a></li>
                 <div class="social-links">
-                    <a href="www.linkedin.com/in/shanti-rai-044902199" target="blank">Linkedin</a>
-                    <a href="#">GitHub</a>
+                    <a href="www.linkedin.com/in/shanti-rai-044902199" target="blank" aria-label="LinkedIn profile">Linkedin</a>
+                    <a href="#" target="_blank" aria-label="GitHub profile">GitHub</a>
                 </div>
             </ul>
         </nav>
     </header>
    
     <main>
-        <section id="header">
-            <h1>WellFed</h1>
-            <img src="../images/WellFed.png" alt="">
+        <section id="header" role="region" aria-labelledby="header-title">
+            <h1 id="header-title">WellFed</h1>
+            <img src="../images/WellFed.png" alt="WellFed webpage screenshot">
         </section>
         <br>
-        <section id="blurb">
+        <section id="blurb" role="region" id="blurb-title">
+            <h2 id="blurb-title" class="visually-hidden">Welcome Message</h2>
             <p>Welcome to [Your Recipe Website Name], where we blend the art of cooking with the elegance of web design. As a front-end web developer, I've crafted a seamless user experience that brings our culinary creations to life on screen. From responsive layouts that adapt to any device, to intuitive navigation that guides you through our rich recipe collection, every pixel is meticulously designed to enhance your cooking journey. Join us and savor the fusion of flavors and technology at [Your Recipe Website Name], where every click brings you closer to culinary inspiration.</p>
         </section>
         <section></section>
