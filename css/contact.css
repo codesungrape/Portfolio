@@ -1,0 +1,81 @@
+body, html {
+    background-image: url('./images/white-background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Oxanium', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 100%;
+}
+
+nav {
+    height: 200%; /* Make nav take the full height of the body */
+    background-color: #9D8189; /* Background color for the nav */
+}
+
+/* nav bar section */
+
+nav ul {
+    display: flex;
+    text-decoration: none;
+    margin: 0;
+    align-items: center;
+    flex-direction: column;
+    background-color: #9D8189;
+    padding-top: 40px;
+}
+
+
+nav ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0 10px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 10px;
+    display: block;
+    color: whitesmoke;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-links a {
+    padding-bottom: 5px;
+}
+
+
+/* contact us */
+
+#contact-us {
+    padding-top: 20px;
+    margin: 20px;
+}
+
+
+
+/* form section */
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, textarea {
+    margin:0px 25px;
+}

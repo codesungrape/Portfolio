@@ -1,0 +1,156 @@
+
+
+body, html {
+    background-image: url('./images/white-background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Oxanium', sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+
+
+/* header section */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+
+/* nav bar section */
+
+nav {
+    height: 100%; 
+    background-color: #9D8189; /* Background color for the nav */
+    display: flex;
+    justify-content: center; /*horizontal*/
+    align-items: center; /*vertical*/
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+
+nav ul {
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    padding-top: 0px;
+}
+
+
+nav ul li {
+    margin: 0 20px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    padding: 15px 10px; /*changes spacing between the links */
+    display: block;
+    color: whitesmoke;
+}
+
+#LinkedIn{
+    height: 50px;
+    width: auto;
+}
+
+#GitHub{
+    height: 40px;
+    width: auto;
+    margin-left: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #7b6369;
+    color: white;
+}
+
+
+
+
+/* introduction section */
+
+#introduction {
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#introduction h1 {
+    font-size: xx-large;
+}
+
+#introduction img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+#introduction p {
+    padding-top: 20px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+
+/* projects section */
+
+#projects-container {
+    padding: 20px;
+}
+
+#projects-container img {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+#projects-container h1 {
+    font-size: xx-large;
+}
+
+#projects-container a {
+    text-decoration: none;
+}
+
+
+/* responsive design */
+
+    /* For tablets and smaller devices */
+    @media (max-width: 768px) {
+        nav ul {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        #introduction {
+            padding: 10px;
+        }
+    }
+
+    /* For mobile phones */
+    @media (max-width: 480px) {
+        nav ul li a {
+            padding: 8px 12px;
+            font-size: 14px;
+        }
+
+        #introduction img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
