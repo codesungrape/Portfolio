@@ -35,12 +35,13 @@
         </section>
 
         <form id="contactForm" action="/submit-form" method="post" aria-labelledby="contact-us-title">
-            <input type="text" id="fullname" name="fullname" placeholder="Name *" required><br><br>
             
-            <input type="email" id="email" name="email" placeholder="Email *" required><br><br>
-
-            <input type="subject" id="subject" name="subject" placeholder="Subject *" required><br><br>
-            
+            <input type="text" id="fullname" name="fullname" placeholder="Name *" required minlength="1" maxlength="100">
+            <br>  
+            <input type="email" id="email" name="email" placeholder="Email *" required pattern=".*@.*" title="Email must include an @ symbol">
+            <br>
+            <input type="subject" id="subject" name="subject" placeholder="Subject *" required>
+            <br>
             <textarea id="message" name="message" rows="4" cols="50" placeholder="Write your message here..."></textarea>
 
         </form>

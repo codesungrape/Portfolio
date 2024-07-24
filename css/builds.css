@@ -1,0 +1,126 @@
+body, html {
+    background-image: url('./images/white-background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Oxanium', sans-serif;
+
+}
+
+body {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 100%;
+}
+
+/* header section */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px; /* Adjust width as needed */
+    overflow-y: auto; /* Allows scrolling if content exceeds viewport height */
+    
+}
+
+
+/* nav bar section */
+
+nav {
+    height: 100%; 
+    background-color: #9D8189; /* Background color for the nav */
+    display: flex;
+    justify-content: center; /*horizontal*/
+    align-items: center; /*vertical*/
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    list-style-type: none;
+    padding-top: 0px;
+}
+
+
+nav ul li {
+    margin: 0 20px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    padding: 15px 10px; /*changes spacing between the links */
+    display: flex;
+    color: whitesmoke;
+}
+
+#LinkedIn{
+    height: 50px;
+    width: auto;
+}
+
+#GitHub{
+    height: 40px;
+    width: auto;
+    margin-left: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #7b6369;
+    color: white;
+}
+
+
+
+
+/* main and introduction section */
+
+main {
+    margin-left: 200px; /* match width of header */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 200px); /* Take remaining width after considering header */
+    overflow-x: auto;
+}
+
+
+#header-title {
+    text-align: center;
+}
+
+#header img {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+
+
+
+#blurb {
+    padding: 20px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+

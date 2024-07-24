@@ -83,6 +83,7 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #2C4E49;
     color: aliceblue;
+    
 }
 
 
@@ -113,6 +114,9 @@ main {
     padding-bottom: 10px;;
 }
 
+#contactForm input {
+    padding: 5px;
+}
 
 #contact-us-text {
     padding: 15px;
@@ -129,5 +133,6 @@ form {
 }
 
 form input, textarea {
+    padding: 5px;
     margin:0px 25px;
 }
