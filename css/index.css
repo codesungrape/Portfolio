@@ -10,15 +10,21 @@ body, html {
     padding: 0;
     height: 100%;
     font-family: 'Oxanium', sans-serif;
+    box-sizing: border-box;
 }
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 
 body {
-    margin: 0;
     display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
+    flex-direction: column;
+    margin: 10px;
 }
-
 
 
 /* header section */
@@ -28,7 +34,7 @@ header {
     top: 0;
     left: 0;
     height: 100%;
-    width: 200px; /* Adjust width as needed */
+    width: 10rem; /* Adjust width as needed */
     overflow-y: auto; /* Allows scrolling if content exceeds viewport height */
     
 }
@@ -38,8 +44,9 @@ header {
 
 nav {
     height: 100%; 
-    background-color: #9D8189; /* Background color for the nav */
+    background-color: #9D8189; 
     display: flex;
+    flex-direction: column;
     justify-content: center; /*horizontal*/
     align-items: center; /*vertical*/
     position: sticky;
@@ -49,28 +56,26 @@ nav {
 
 
 nav ul {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
     list-style-type: none;
-    padding-top: 0px;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
 }
 
 
 nav ul li {
-    margin: 0 20px;
+    margin: 20px 0;
 }
 
 
 nav ul li a {
     text-decoration: none;
-    padding: 15px 10px; /*changes spacing between the links */
+    padding: 15px 10px;
     display: flex;
     color: whitesmoke;
 }
 
 #LinkedIn{
-    height: 50px;
+    height: 40px;
     width: auto;
 }
 
@@ -91,39 +96,32 @@ nav ul li a:hover {
 /* main and introduction section */
 
 main {
-    margin-left: 200px; /* match width of header */
-    padding: 20px;
+    margin-left: 10rem; /* match width of header */
     display: flex;
     flex-direction: column;
-    width: calc(100% - 200px); /* Take remaining width after considering header */
+    text-align: end;
+    width: calc(100% - 10rem); /*Take remaining width after considering header */
     overflow-x: auto;
 }
 
 
 #introduction {
-    /* margin: 0 auto; */
-    margin-top: 100px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-top: 8rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-
+    padding-bottom: 2rem;
+    width: 100%;
+    
 }
 
 #introduction h1 {
     font-size: xx-large;
 }
 
-#introduction img {
-    max-width: 250px;
-    max-height: 250px;
-}
 
-#introduction p {
-    padding-top: 20px;
-    font-family:Arial, Helvetica, sans-serif
-}
 
 /* hr section appropriate styling to ensure it is visible */
 hr {
@@ -132,39 +130,39 @@ hr {
     border-top: 3px solid #ccc; 
 }
 
+/* footer section */
 
-
-/* projects section */
-
-#builds-container {
-    padding: 20px;
+footer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: flex-end;
+    /* align-items: baseline; */
 }
 
-#builds-container img {
-    max-width: 400px;
-    max-height: 400px;
+footer p {
+    padding-top: 4rem;
+    padding-bottom: 0rem;
 }
 
-#builds-container h1 {
-    font-size: xx-large;
-}
-
-#builds-container a {
-    text-decoration: none;
-}
 
 
 /* responsive design */
 
     /* For tablets and smaller devices */
     @media (max-width: 768px) {
+
+        body {
+            flex-direction: column;
+        }
+
         nav ul {
             flex-direction: column;
             align-items: flex-start;
         }
+
+        main {
+            margin-left: 0;
+            width: 100%;
+        }    
 
         #introduction {
             padding: 10px;
@@ -173,13 +171,84 @@ hr {
 
     /* For mobile phones */
     @media (max-width: 480px) {
-        nav ul li a {
-            padding: 8px 12px;
+        
+        html {
             font-size: 14px;
         }
+        /* standardised element CSS */
+        
+        body {
+            flex-direction: column;
+            margin: 0;
+        }
+
+        header {
+            position: static;
+            height: 15%;
+            width: 100%;
+        }
+        
+        #nav-container {
+            width: 100%;
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: row;
+        }
+
+        nav ul li {
+            margin: 0 5px;
+            padding-top: 25px;
+        }
+        
+        nav ul li a {
+            padding: 0px;
+            font-size: 14px;
+            margin: 0 2px;      
+        }
+
+    
 
         #introduction img {
             max-width: 100%;
             height: auto;
         }
+
+        #LinkedIn{
+            height: 25px;
+            width: auto;
+           
+        }
+        
+        #GitHub{
+            height: 20px;
+            width: auto;
+            margin-left: 5px;
+        }
+
+        /* main */
+        main {
+            width: 100%;
+            overflow-x: hidden;
+            padding-right: 10px;
+            margin-right: 40px;
+        }
+       
+
+        /* CSS of personalized main elements */
+
+        #introduction {
+            margin-top: 0.5rem;
+        }
+        #introduction h1{
+            margin: 0.3rem;
+            padding: 0.5rem;
+        }
+
+        #introduction h3{
+            margin-bottom: 2rem;
+    
+        }
+
     }

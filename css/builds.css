@@ -87,6 +87,7 @@ nav ul li a:hover {
 
 /* main and introduction section */
 
+
 main {
     margin-left: 200px; /* match width of header */
     padding: 20px;
@@ -96,20 +97,35 @@ main {
     overflow-x: auto;
 }
 
+#builds-header {
+    text-align: center;
+    padding-top: 2rem;
+}
 
-#header-title {
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+
+#Portfolio-title {
     text-align: center;
 }
 
-#header img {
-    max-width: 400px;
-    max-height: 400px;
+.section-container img {
+    max-width: 100%;
+    max-height: auto;
+    display: block;
 }
 
+#WellFed-title {
+    text-align: center;
+}
 
-
-
-#blurb {
+.blurb {
     padding: 20px;
 }
 
