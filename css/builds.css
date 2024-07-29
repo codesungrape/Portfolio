@@ -1,3 +1,10 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
 body, html {
     background-image: url('./images/white-background.webp');
     background-size: cover;
@@ -50,7 +57,7 @@ nav ul {
     flex-direction: column;
     margin: 0;
     list-style-type: none;
-    padding-top: 0px;
+    /* padding: 0px; */
 }
 
 
@@ -111,7 +118,7 @@ main {
 }
 
 
-#Portfolio-title {
+#Portfolio-title, #WellFed-title {
     text-align: center;
 }
 
@@ -121,9 +128,6 @@ main {
     display: block;
 }
 
-#WellFed-title {
-    text-align: center;
-}
 
 .blurb {
     padding: 20px;
@@ -140,3 +144,69 @@ main {
     border: 0;
 }
 
+
+
+
+
+
+/* For mobile phones */
+@media (max-width: 480px) {
+        
+    body {
+        flex-direction: column;
+    }
+
+
+    /* nav/header section */
+    header {
+        position: static;
+        height: 300px;
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin: 0 5px;
+        padding-top: 25px;
+    }
+    
+    nav ul li a {
+        padding: 0px;
+        font-size: 16px;
+        margin: 0 3px;      
+    }
+
+
+    #LinkedIn{
+        height: 25px;
+        width: auto;
+       
+    }
+    
+    #GitHub{
+        height: 20px;
+        width: auto;
+        margin-left: 3px;
+        padding-right: 10px;
+    }
+
+    /* main */
+
+    #main-container {
+        flex-direction: column;
+        width: 100%;
+        padding: 3px; /* Ensure no padding on main */
+        margin: 0; /* Ensure no margin on main */
+        font-size: 14px;
+        border: 1px solid red;
+    }
+
+
+    /* CSS of personalized main elements */
+
+
+}
